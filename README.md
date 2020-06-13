@@ -1,3 +1,5 @@
+![Develop](https://github.com/toltecah/eslint-config/workflows/Develop/badge.svg?branch=develop&event=push)
+
 # @toltecah/eslint-config
 
 This package provides a shareable ESLint configuration that includes `jest`, `typescript`, `jsx-a11y`, `react` and `prettier` configurations.
