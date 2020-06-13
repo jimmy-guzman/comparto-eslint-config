@@ -10,7 +10,8 @@
     "lint:fix": "yarn lint --fix",
     "test": "ava",
     "test:watch": "yarn test --watch",
-    "test:coverage": "nyc ava"
+    "test:coverage": "nyc ava",
+    "test:ci": "nyc --silent ava --fail-fast"
   },
   "ava": {
     "snapshotDir": "snapshots"
