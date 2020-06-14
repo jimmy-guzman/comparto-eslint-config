@@ -58,9 +58,7 @@ jobs:
       - name: Configure NPM Registry
         uses: actions/setup-node@v1
         with:
-          scope: '@toltecah'
           node-version: '${{ steps.nvm.outputs.NVMRC }}'
-          registry-url: https://registry.npmjs.org/
 
       - run: yarn install --frozen-lockfile
 
