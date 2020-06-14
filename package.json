@@ -39,11 +39,14 @@
     "eslint-plugin-react-hooks": "^4.0.4"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "ava": "^3.9.0",
     "eslint": "^7.2.0",
     "eslint-plugin-ava": "^10.3.1",
     "nyc": "^15.1.0",
     "prettier": "^2.0.5",
+    "semantic-release": "^17.0.8",
     "typescript": "^3.9.5"
   },
   "files": [
