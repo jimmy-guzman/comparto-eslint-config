@@ -1,10 +1,16 @@
 {
   "name": "@toltecah/eslint-config",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "main": "index.js",
-  "repository": "https://github.com/toltecah/eslint-config.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toltecah/eslint-config.git"
+  },
   "author": "@jimmy-guzman <jimmy.guzman@outlook.com>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint/ . --ext .js",
     "lint:fix": "yarn lint --fix",
@@ -33,11 +39,14 @@
     "eslint-plugin-react-hooks": "^4.0.4"
   },
   "devDependencies": {
-    "ava": "^3.8.2",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "ava": "^3.9.0",
     "eslint": "^7.2.0",
     "eslint-plugin-ava": "^10.3.1",
     "nyc": "^15.1.0",
     "prettier": "^2.0.5",
+    "semantic-release": "^17.0.8",
     "typescript": "^3.9.5"
   },
   "files": [
