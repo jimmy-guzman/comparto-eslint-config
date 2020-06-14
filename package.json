@@ -1,8 +1,11 @@
 {
   "name": "@toltecah/eslint-config",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "main": "index.js",
-  "repository": "https://github.com/toltecah/eslint-config.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toltecah/eslint-config.git"
+  },
   "author": "@jimmy-guzman <jimmy.guzman@outlook.com>",
   "license": "MIT",
   "scripts": {
@@ -11,7 +14,8 @@
     "test": "ava",
     "test:watch": "yarn test --watch",
     "test:coverage": "nyc ava",
-    "test:ci": "nyc --silent ava --fail-fast"
+    "test:ci": "nyc --silent ava --fail-fast",
+    "semantic-release": "semantic-release"
   },
   "ava": {
     "snapshotDir": "snapshots"
@@ -38,6 +42,7 @@
     "eslint-plugin-ava": "^10.3.1",
     "nyc": "^15.1.0",
     "prettier": "^2.0.5",
+    "semantic-release": "^17.0.8",
     "typescript": "^3.9.5"
   },
   "files": [
