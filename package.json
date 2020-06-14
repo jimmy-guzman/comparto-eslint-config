@@ -14,8 +14,7 @@
     "test": "ava",
     "test:watch": "yarn test --watch",
     "test:coverage": "nyc ava",
-    "test:ci": "nyc --silent ava --fail-fast",
-    "semantic-release": "semantic-release"
+    "test:ci": "nyc --silent ava --fail-fast"
   },
   "ava": {
     "snapshotDir": "snapshots"
@@ -37,12 +36,11 @@
     "eslint-plugin-react-hooks": "^4.0.4"
   },
   "devDependencies": {
-    "ava": "^3.8.2",
+    "ava": "^3.9.0",
     "eslint": "^7.2.0",
     "eslint-plugin-ava": "^10.3.1",
     "nyc": "^15.1.0",
     "prettier": "^2.0.5",
-    "semantic-release": "^17.0.8",
     "typescript": "^3.9.5"
   },
   "files": [
