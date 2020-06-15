@@ -1,10 +1,10 @@
 {
-  "name": "@toltecah/eslint-config",
+  "name": "@comparto/eslint-config",
   "version": "0.0.0-development",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/toltecah/eslint-config.git"
+    "url": "https://github.com/comparto/eslint-config.git"
   },
   "author": "@jimmy-guzman <jimmy.guzman@outlook.com>",
   "license": "MIT",
