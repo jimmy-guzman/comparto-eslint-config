@@ -1,5 +1,8 @@
 module.exports = {
   plugins: ['jest'],
+  env: {
+    'jest/globals': true
+  },
   rules: {
     'jest/expect-expect': 'warn',
     'jest/no-commented-out-tests': 'error',
