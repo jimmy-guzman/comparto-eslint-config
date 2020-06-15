@@ -8,6 +8,11 @@
   },
   "author": "@jimmy-guzman <jimmy.guzman@outlook.com>",
   "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "comparte"
+  ],
   "publishConfig": {
     "access": "public"
   },
