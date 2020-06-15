@@ -1,4 +1,4 @@
-# Snapshot report for `rules/base.test.js`
+# Snapshot report for `test/base.test.js`
 
 The actual snapshot is saved in `base.test.js.snap`.
 

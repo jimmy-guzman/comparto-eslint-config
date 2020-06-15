@@ -1,4 +1,4 @@
-# Snapshot report for `rules/typescript.test.js`
+# Snapshot report for `test/typescript.test.js`
 
 The actual snapshot is saved in `typescript.test.js.snap`.
 
