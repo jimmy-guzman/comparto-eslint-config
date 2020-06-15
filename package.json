@@ -12,12 +12,26 @@
     "access": "public"
   },
   "scripts": {
+    "prettify": "prettier '**/**/*.{js,md}' --write",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint/ . --ext .js",
     "lint:fix": "yarn lint --fix",
     "test": "ava",
     "test:watch": "yarn test --watch",
     "test:coverage": "nyc ava",
     "test:ci": "nyc --silent ava --fail-fast"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{md}": [
+      "prettier --write"
+    ],
+    "*.{js}": [
+      "eslint --fix"
+    ]
   },
   "peerDependencies": {
     "eslint": "^7.2.0",
@@ -41,6 +55,8 @@
     "ava": "^3.9.0",
     "eslint": "^7.2.0",
     "eslint-plugin-ava": "^10.3.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.10",
     "nyc": "^15.1.0",
     "prettier": "^2.0.5",
     "semantic-release": "^17.0.8",

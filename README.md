@@ -2,7 +2,6 @@
 [![version][version-badge]][package] [![downloads][downloads-badge]][npmtrends]
 [![semantic-release][semantic-release-badge]][semantic-release]
 
-
 # @comparto/eslint-config
 
 This package provides a shareable ESLint configuration that includes `jest`, `typescript`, `jsx-a11y`, `react` and `prettier` configurations.
@@ -11,15 +10,16 @@ This package provides a shareable ESLint configuration that includes `jest`, `ty
 
 1. Install stuff:
 
-    ```sh
-    npx install-peerdeps --dev @comparto/eslint-config
-    ```
-    or if you wish this to be a common dependency in a yarn workspaces monorepo
+   ```sh
+   npx install-peerdeps --dev @comparto/eslint-config
+   ```
 
-    ```sh
-    # -Y --yarn, -x --extra-args, -W --ignore-workspace-root-check
-    npx install-peerdeps @comparto/eslint-config --dev -Y -x -W
-    ```
+   or if you wish this to be a common dependency in a yarn workspaces monorepo
+
+   ```sh
+   # -Y --yarn, -x --extra-args, -W --ignore-workspace-root-check
+   npx install-peerdeps @comparto/eslint-config --dev -Y -x -W
+   ```
 
 1. Add `"extends": "@comparto/eslint-config"` to your `.eslintrc`
 
