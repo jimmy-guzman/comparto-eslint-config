@@ -14,6 +14,12 @@ This package provides a shareable ESLint configuration that includes `jest`, `ty
     ```sh
     npx install-peerdeps --dev @comparto/eslint-config
     ```
+    or if you wish this to be a common dependency in a yarn workspaces monorepo
+
+    ```sh
+    # -Y --yarn, -x --extra-args, -W --ignore-workspace-root-check
+    npx install-peerdeps @comparto/eslint-config --dev -Y -x -W
+    ```
 
 1. Add `"extends": "@comparto/eslint-config"` to your `.eslintrc`
 
