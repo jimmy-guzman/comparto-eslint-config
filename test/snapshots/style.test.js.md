@@ -1,4 +1,4 @@
-# Snapshot report for `rules/style.test.js`
+# Snapshot report for `test/style.test.js`
 
 The actual snapshot is saved in `style.test.js.snap`.
 

@@ -1,4 +1,4 @@
-# Snapshot report for `rules/react.test.js`
+# Snapshot report for `test/react.test.js`
 
 The actual snapshot is saved in `react.test.js.snap`.
 
