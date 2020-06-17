@@ -4,6 +4,15 @@ module.exports = {
       files: ['**/*.ts?(x)'],
       plugins: ['@typescript-eslint'],
       parser: '@typescript-eslint/parser',
+      settings: {
+        'import/external-module-folders': [
+          'node_modules',
+          'node_modules/@types'
+        ],
+        'import/parsers': {
+          '@typescript-eslint/parser': ['.ts', '.tsx', '.d.ts']
+        }
+      },
       rules: {
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/ban-ts-ignore': 'error',
@@ -37,7 +46,9 @@ module.exports = {
         'no-var': 'error',
         'prefer-const': 'error',
         'prefer-rest-params': 'error',
-        'prefer-spread': 'error'
+        'prefer-spread': 'error',
+        // TypeScript compilation already ensures that named imports exist in the referenced module
+        'import/named': 'off'
       }
     }
   ]

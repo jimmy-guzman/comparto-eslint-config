@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`imports.js should create default configuration 1`] = `
+Object {
+  "plugins": Array [
+    "import",
+  ],
+  "rules": Object {
+    "import/default": "error",
+    "import/export": "error",
+    "import/extensions": Array [
+      "error",
+      "ignorePackages",
+      Object {
+        "js": "never",
+        "jsx": "never",
+        "mjs": "never",
+        "ts": "never",
+        "tsx": "never",
+      },
+    ],
+    "import/named": "error",
+    "import/namespace": "error",
+    "import/no-duplicates": "error",
+    "import/no-named-as-default": "warn",
+    "import/no-named-as-default-member": "warn",
+    "import/no-unresolved": Array [
+      "error",
+      Object {
+        "caseSensitive": true,
+        "commonjs": true,
+      },
+    ],
+    "import/order": Array [
+      "error",
+      Object {
+        "groups": Array [
+          Array [
+            "builtin",
+            "external",
+            "internal",
+          ],
+        ],
+        "newlines-between": "always",
+      },
+    ],
+  },
+  "settings": Object {
+    "import/extensions": Array [
+      ".js",
+      ".mjs",
+      ".jsx",
+      ".ts",
+      ".tsx",
+    ],
+    "import/ignore": Array [
+      "node_modules",
+    ],
+    "import/resolver": Object {
+      "node": Object {
+        "extensions": Array [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx",
+          ".json",
+        ],
+      },
+      "webpack": Object {
+        "config": Object {},
+      },
+    },
+  },
+}
+`;

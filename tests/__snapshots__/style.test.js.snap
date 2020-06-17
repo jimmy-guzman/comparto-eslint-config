@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`style.js 1`] = `
+Object {
+  "env": Object {
+    "browser": true,
+    "es6": true,
+    "node": true,
+  },
+  "extends": Array [
+    "plugin:prettier/recommended",
+    "prettier/react",
+    "prettier/@typescript-eslint",
+    "plugin:jest/style",
+  ],
+  "plugins": Array [
+    "prettier",
+    "jest",
+  ],
+  "rules": Object {
+    "prettier/prettier": Array [
+      "error",
+      Object {
+        "arrowParens": "avoid",
+        "jsxSingleQuote": true,
+        "printWidth": 80,
+        "quoteProps": "consistent",
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "none",
+      },
+    ],
+  },
+}
+`;
