@@ -25,6 +25,19 @@ This package provides a shareable ESLint configuration that includes `jest`, `ty
 
 1. Add `"extends": "@comparto/eslint-config"` to your `.eslintrc`
 
+### Using webpack aliases?
+
+This config uses [`eslint-import-resolver-webpack`](https://github.com/benmosher/eslint-plugin-import/tree/master/resolvers/webpack) with a default setting of:
+
+```yml
+settings:
+  import/resolver:
+    webpack:
+      config: 'webpack.dev.config.js' # or {} if not found
+```
+
+This can be overridden exactly the same as the [`eslint-import-resolver-webpack`](https://github.com/benmosher/eslint-plugin-import/tree/master/resolvers/webpack#eslint-import-resolver-webpack) configuration
+
 [actions-badge]: https://img.shields.io/github/workflow/status/comparto/eslint-config/Release?label=actions&logo=github-actions&style=flat-square
 [version-badge]: https://img.shields.io/npm/v/@comparto/eslint-config.svg?logo=npm&style=flat-square
 [package]: https://www.npmjs.com/package/@comparto/eslint-config

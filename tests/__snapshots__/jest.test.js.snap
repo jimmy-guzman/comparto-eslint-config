@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`jest.js 1`] = `
+Object {
+  "env": Object {
+    "jest/globals": true,
+  },
+  "plugins": Array [
+    "jest",
+  ],
+  "rules": Object {
+    "jest/expect-expect": "warn",
+    "jest/no-commented-out-tests": "error",
+    "jest/no-disabled-tests": "warn",
+    "jest/no-export": "error",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/no-jasmine-globals": "warn",
+    "jest/no-jest-import": "error",
+    "jest/no-large-snapshots": Array [
+      "warn",
+      Object {
+        "inlineMaxSize": 6,
+        "maxSize": 60,
+      },
+    ],
+    "jest/no-mocks-import": "error",
+    "jest/no-standalone-expect": "error",
+    "jest/no-test-callback": "error",
+    "jest/no-test-prefixes": "error",
+    "jest/no-try-expect": "error",
+    "jest/valid-describe": "error",
+    "jest/valid-expect": "error",
+    "jest/valid-expect-in-promise": "error",
+  },
+}
+`;

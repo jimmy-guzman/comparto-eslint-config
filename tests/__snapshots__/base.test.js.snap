@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`base.js 1`] = `
+Object {
+  "env": Object {
+    "browser": true,
+    "es6": true,
+    "node": true,
+  },
+  "extends": Array [
+    "eslint:recommended",
+  ],
+  "globals": Object {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+  },
+  "parser": "babel-eslint",
+  "parserOptions": Object {
+    "ecmaFeatures": Object {
+      "jsx": true,
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "warnOnUnsupportedTypeScriptVersion": true,
+  },
+  "rules": Object {
+    "no-console": "warn",
+    "prefer-const": "error",
+  },
+}
+`;
