@@ -23,7 +23,7 @@
     "test": "ava",
     "test:watch": "yarn test --watch",
     "test:coverage": "nyc ava",
-    "test:ci": "nyc --silent ava --fail-fast"
+    "test:ci": "nyc --silent ava --fail-fast && nyc report --reporter=text-lcov > coverage.lcov"
   },
   "husky": {
     "hooks": {

@@ -1,6 +1,7 @@
 ![actions][actions-badge]
 [![version][version-badge]][package] [![downloads][downloads-badge]][npmtrends]
 [![semantic-release][semantic-release-badge]][semantic-release]
+[![Code Coverage][coverage-badge]][coverage]
 
 # @comparto/eslint-config
 
@@ -29,4 +30,6 @@ This package provides a shareable ESLint configuration that includes `jest`, `ty
 [downloads-badge]: https://img.shields.io/npm/dm/@comparto/eslint-config.svg?logo=npm&style=flat-square
 [npmtrends]: http://www.npmtrends.com/@comparto/eslint-config
 [semantic-release]: https://github.com/semantic-release/semantic-release
-[semantic-release-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?&style=flat-square
+[semantic-release-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square
+[coverage-badge]: https://img.shields.io/codecov/c/github/comparto/eslint-config.svg?style=flat-square
+[coverage]: https://codecov.io/github/testing-library/react-testing-library

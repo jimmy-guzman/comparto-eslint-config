@@ -34,6 +34,12 @@ jobs:
       - run: yarn lint
       - run: yarn test:ci
 
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          file: ./coverage.lcov
+
+
   publish-npm:
     needs: test
     runs-on: ubuntu-latest
