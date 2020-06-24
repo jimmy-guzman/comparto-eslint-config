@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/comparto/eslint-config/compare/v1.0.2...v1.1.0) (2020-06-24)
+
+
+### Features
+
+* 🎸 added import rules ([8e9c86e](https://github.com/comparto/eslint-config/commit/8e9c86e2c4df0e355461f79f2b7b66319afc2ef0)), closes [#14](https://github.com/comparto/eslint-config/issues/14)
+
 ## [1.0.2](https://github.com/comparto/eslint-config/compare/v1.0.1...v1.0.2) (2020-06-15)
 
 
