@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`typescript.js 1`] = `
+exports[`typescript.js should create default configuration 1`] = `
 Object {
   "overrides": Array [
     Object {
@@ -8,6 +8,9 @@ Object {
         "**/*.ts?(x)",
       ],
       "parser": "@typescript-eslint/parser",
+      "parserOptions": Object {
+        "project": "mock-tsconfig-path",
+      },
       "plugins": Array [
         "@typescript-eslint",
       ],

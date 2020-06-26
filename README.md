@@ -38,6 +38,10 @@ settings:
 
 This can be overridden exactly the same as the [`eslint-import-resolver-webpack`](https://github.com/benmosher/eslint-plugin-import/tree/master/resolvers/webpack#eslint-import-resolver-webpack) configuration
 
+### Using typescript?
+
+This config uses some rules that require type information like [naming-convention](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/naming-convention.md#selector-options), so `@typescript-eslint/parser`'s [`parserOptions.project`](https://eslint.org/docs/user-guide/configuring#specifying-parser-options) is set to `"./tsconfig.json"`. Override this value if your `tsconfig.json` is located somewhere else.
+
 [actions-badge]: https://img.shields.io/github/workflow/status/comparto/eslint-config/Release?label=actions&logo=github-actions&style=flat-square
 [version-badge]: https://img.shields.io/npm/v/@comparto/eslint-config.svg?logo=npm&style=flat-square
 [package]: https://www.npmjs.com/package/@comparto/eslint-config

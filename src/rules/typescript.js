@@ -1,9 +1,14 @@
+const { tsConfigPath } = require('../paths')
+
 module.exports = {
   overrides: [
     {
       files: ['**/*.ts?(x)'],
       plugins: ['@typescript-eslint'],
       parser: '@typescript-eslint/parser',
+      parserOptions: {
+        project: tsConfigPath()
+      },
       settings: {
         'import/external-module-folders': [
           'node_modules',

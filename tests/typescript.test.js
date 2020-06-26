@@ -1,5 +1,16 @@
 const typescript = require('../src/rules/typescript')
 
-test('typescript.js', () => {
-  expect(typescript).toMatchSnapshot()
+jest.mock('../src/paths', () => ({
+  tsConfigPath: () => 'mock-tsconfig-path'
+}))
+
+describe('typescript.js', () => {
+  it('should create default configuration', () => {
+    expect(typescript).toMatchSnapshot()
+  })
+  it('should have parserOptions.project set correctly', () => {
+    const parserOptions = typescript.overrides[0].parserOptions
+
+    expect(parserOptions.project).toBe('mock-tsconfig-path')
+  })
 })
