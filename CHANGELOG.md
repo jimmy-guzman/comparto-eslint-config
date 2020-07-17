@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/comparto/eslint-config/compare/v1.1.2...v2.0.0) (2020-07-17)
+
+
+### Features
+
+* 🎸 `prettier` rules are now decoupled from eslint ([ac0d8a2](https://github.com/comparto/eslint-config/commit/ac0d8a29a344044479c712bd8e57e299d72042fd)), closes [#31](https://github.com/comparto/eslint-config/issues/31)
+
+
+### BREAKING CHANGES
+
+* Install [`@comparto/prettier-config`](https://github.com/comparto/prettier-config) to retain prettier rules.
+
 ## [1.1.2](https://github.com/comparto/eslint-config/compare/v1.1.1...v1.1.2) (2020-06-26)
 
 
