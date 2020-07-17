@@ -1,12 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`style.js 1`] = `
+exports[`style.js should create default configuration 1`] = `
 Object {
-  "env": Object {
-    "browser": true,
-    "es6": true,
-    "node": true,
-  },
   "extends": Array [
     "plugin:prettier/recommended",
     "prettier/react",
@@ -18,18 +13,7 @@ Object {
     "jest",
   ],
   "rules": Object {
-    "prettier/prettier": Array [
-      "error",
-      Object {
-        "arrowParens": "avoid",
-        "jsxSingleQuote": true,
-        "printWidth": 80,
-        "quoteProps": "consistent",
-        "semi": false,
-        "singleQuote": true,
-        "trailingComma": "none",
-      },
-    ],
+    "prettier/prettier": "error",
   },
 }
 `;

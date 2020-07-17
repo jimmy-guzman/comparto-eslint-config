@@ -6,9 +6,9 @@
 
 # @comparto/eslint-config
 
-This package provides a shareable ESLint configuration that includes `jest`, `typescript`, `jsx-a11y`, `react` and `prettier` configurations.
+This package provides a shareable ESLint configuration with reasonable rules for react, typescript and javascript.
 
-## Usage
+## Usage:
 
 1. Install stuff:
 
@@ -16,7 +16,7 @@ This package provides a shareable ESLint configuration that includes `jest`, `ty
    npx install-peerdeps --dev @comparto/eslint-config
    ```
 
-   or if you wish this to be a common dependency in a yarn workspaces monorepo
+   or if you wish this to be a common dependency in a yarn workspaces monorepo:
 
    ```sh
    # -Y --yarn, -x --extra-args, -W --ignore-workspace-root-check
@@ -24,6 +24,14 @@ This package provides a shareable ESLint configuration that includes `jest`, `ty
    ```
 
 1. Add `"extends": "@comparto/eslint-config"` to your `.eslintrc`
+
+### Prettier:
+
+```sh
+yarn add -D @comparto/eslint-config
+```
+
+Add `"prettier": "@comparto/prettier-config"` to your `package.json` or any [configuration](https://prettier.io/docs/en/configuration.html) of your choice.
 
 ### Using webpack aliases?
 
@@ -36,7 +44,7 @@ settings:
       config: 'webpack.dev.config.js' # or {} if not found
 ```
 
-This can be overridden exactly the same as the [`eslint-import-resolver-webpack`](https://github.com/benmosher/eslint-plugin-import/tree/master/resolvers/webpack#eslint-import-resolver-webpack) configuration
+This can be overridden exactly the same as the [`eslint-import-resolver-webpack`](https://github.com/benmosher/eslint-plugin-import/tree/master/resolvers/webpack#eslint-import-resolver-webpack) configuration.
 
 ### Using typescript?
 
