@@ -402,6 +402,11 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@comparto/prettier-config@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@comparto/prettier-config/-/prettier-config-1.0.0.tgz#eaeafb4cc4552a612aa63baa5013cf542f01e611"
+  integrity sha512-1h86wq/UEFwg7ScR2N+o87s5RpZEmMRr7kHh51BjRLlFZviaZiqVmi920pSCNWqFSonGQaMuuV/KoLG9IQNAbQ==
+
 "@iarna/cli@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@iarna/cli/-/cli-1.2.0.tgz#0f7af5e851afe895104583c4ca07377a8094d641"
