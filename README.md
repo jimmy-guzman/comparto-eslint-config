@@ -28,7 +28,7 @@ This package provides a shareable ESLint configuration with reasonable rules for
 ### Prettier:
 
 ```sh
-yarn add -D @comparto/eslint-config
+yarn add -D @comparto/prettier-config
 ```
 
 Add `"prettier": "@comparto/prettier-config"` to your `package.json` or any [configuration](https://prettier.io/docs/en/configuration.html) of your choice.
