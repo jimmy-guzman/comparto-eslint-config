@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react.js 1`] = `
+Object {
+  "extends": Array [
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+  ],
+  "plugins": Array [
+    "react",
+    "react-hooks",
+    "jsx-a11y",
+  ],
+  "rules": Object {
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react/boolean-prop-naming": Array [
+      "error",
+      Object {
+        "rule": "^(is|has|should|can|did|will)[A-Z]([A-Za-z0-9]?)+",
+      },
+    ],
+    "react/button-has-type": "error",
+    "react/default-props-match-prop-types": "error",
+    "react/forbid-prop-types": Array [
+      "error",
+      Object {
+        "checkChildContextTypes": true,
+        "checkContextTypes": true,
+        "forbid": Array [
+          "any",
+          "array",
+          "object",
+        ],
+      },
+    ],
+    "react/jsx-boolean-value": Array [
+      "error",
+      "never",
+    ],
+    "react/jsx-fragments": Array [
+      "error",
+      "syntax",
+    ],
+    "react/jsx-no-duplicate-props": Array [
+      "error",
+      Object {
+        "ignoreCase": true,
+      },
+    ],
+    "react/jsx-no-useless-fragment": "error",
+    "react/jsx-pascal-case": "error",
+    "react/style-prop-object": "error",
+  },
+  "settings": Object {
+    "react": Object {
+      "version": "detect",
+    },
+  },
+}
+`;

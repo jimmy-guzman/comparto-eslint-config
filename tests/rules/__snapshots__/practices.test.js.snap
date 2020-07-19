@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`practices.js 1`] = `
+Object {
+  "rules": Object {
+    "accessor-pairs": "warn",
+    "complexity": Array [
+      "error",
+      10,
+    ],
+    "curly": "error",
+    "default-case-last": "error",
+    "default-param-last": "error",
+    "eqeqeq": "error",
+    "max-classes-per-file": "error",
+    "no-else-return": "error",
+    "no-eval": "error",
+    "no-return-await": "error",
+    "no-self-compare": "error",
+    "no-warning-comments": "warn",
+    "require-await": "error",
+    "yoda": Array [
+      "error",
+      "never",
+    ],
+  },
+}
+`;

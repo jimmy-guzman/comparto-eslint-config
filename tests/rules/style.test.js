@@ -1,4 +1,4 @@
-const style = require('../src/rules/style')
+const style = require('../../src/rules/style')
 
 describe('style.js', () => {
   it('should create default configuration', () => {

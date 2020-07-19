@@ -23,9 +23,5 @@ Object {
     "sourceType": "module",
     "warnOnUnsupportedTypeScriptVersion": true,
   },
-  "rules": Object {
-    "no-console": "warn",
-    "prefer-const": "error",
-  },
 }
 `;
