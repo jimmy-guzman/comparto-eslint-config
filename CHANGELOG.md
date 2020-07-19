@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/comparto/eslint-config/compare/v2.0.0...v3.0.0) (2020-07-19)
+
+
+### Features
+
+* 🎸 enhanced style, best practices, react and error rules ([b64eb77](https://github.com/comparto/eslint-config/commit/b64eb77c2e875357c55493c3562f5a8bfeb487ba)), closes [#35](https://github.com/comparto/eslint-config/issues/35)
+
+
+### BREAKING CHANGES
+
+* 🧨 most new rules are not auto-fixable(--fix)
+
 # [2.0.0](https://github.com/comparto/eslint-config/compare/v1.1.2...v2.0.0) (2020-07-17)
 
 
