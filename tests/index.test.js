@@ -7,7 +7,9 @@ test('index.js', () => {
     'react',
     'typescript',
     'style',
-    'jest'
+    'jest',
+    'practices',
+    'es6'
   ]
 
   expect(index).toEqual({

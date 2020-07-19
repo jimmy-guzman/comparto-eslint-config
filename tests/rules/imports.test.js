@@ -4,9 +4,9 @@ describe('imports.js', () => {
   })
 
   it('should contain webpack.config.js if webpack is included', () => {
-    jest.doMock('../src/utils', () => ({ doesFileExist: () => true }))
+    jest.doMock('../../src/utils', () => ({ doesFileExist: () => true }))
 
-    const imports = require('../src/rules/imports')
+    const imports = require('../../src/rules/imports')
 
     expect(imports.settings['import/resolver'].webpack.config).toBe(
       'webpack.config.js'
@@ -14,9 +14,9 @@ describe('imports.js', () => {
   })
 
   it('should create default configuration', () => {
-    jest.doMock('../src/utils', () => ({ doesFileExist: () => false }))
+    jest.doMock('../../src/utils', () => ({ doesFileExist: () => false }))
 
-    const imports = require('../src/rules/imports')
+    const imports = require('../../src/rules/imports')
 
     expect(imports).toMatchSnapshot()
   })

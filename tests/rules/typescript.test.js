@@ -1,6 +1,6 @@
-const typescript = require('../src/rules/typescript')
+const typescript = require('../../src/rules/typescript')
 
-jest.mock('../src/paths', () => ({
+jest.mock('../../src/paths', () => ({
   tsConfigPath: () => 'mock-tsconfig-path'
 }))
 
