@@ -24,8 +24,7 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "test:ci": "yarn test:coverage",
-    "find-new-rules": "run-p find-new-rules:*",
-    "find-new-rules:main": "eslint-find-rules --unused ./src/index.js"
+    "find-new-rules": "eslint-find-rules --unused ./src/index.js"
   },
   "prettier": "@comparto/prettier-config",
   "husky": {
