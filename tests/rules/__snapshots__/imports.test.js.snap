@@ -7,7 +7,9 @@ Object {
   ],
   "rules": Object {
     "import/default": "error",
+    "import/dynamic-import-chunkname": "off",
     "import/export": "error",
+    "import/exports-last": "off",
     "import/extensions": Array [
       "error",
       "ignorePackages",
@@ -20,8 +22,11 @@ Object {
       },
     ],
     "import/first": "error",
+    "import/group-exports": "off",
+    "import/max-dependencies": "off",
     "import/named": "error",
     "import/namespace": "error",
+    "import/newline-after-import": "error",
     "import/no-absolute-path": Array [
       "error",
       Object {
@@ -30,9 +35,27 @@ Object {
         "esmodule": true,
       },
     ],
+    "import/no-amd": "error",
+    "import/no-anonymous-default-export": "off",
+    "import/no-commonjs": "off",
+    "import/no-cycle": "warn",
+    "import/no-default-export": "off",
+    "import/no-deprecated": "warn",
     "import/no-duplicates": "error",
+    "import/no-dynamic-require": "off",
+    "import/no-extraneous-dependencies": "error",
+    "import/no-internal-modules": "off",
+    "import/no-mutable-exports": "error",
     "import/no-named-as-default": "warn",
     "import/no-named-as-default-member": "warn",
+    "import/no-named-default": "error",
+    "import/no-named-export": "off",
+    "import/no-namespace": "off",
+    "import/no-nodejs-modules": "off",
+    "import/no-relative-parent-imports": "off",
+    "import/no-restricted-paths": "off",
+    "import/no-self-import": "error",
+    "import/no-unassigned-import": "off",
     "import/no-unresolved": Array [
       "error",
       Object {
@@ -40,6 +63,9 @@ Object {
         "commonjs": true,
       },
     ],
+    "import/no-unused-modules": "off",
+    "import/no-useless-path-segments": "off",
+    "import/no-webpack-loader-syntax": "error",
     "import/order": Array [
       "error",
       Object {
@@ -53,6 +79,8 @@ Object {
         "newlines-between": "always",
       },
     ],
+    "import/prefer-default-export": "off",
+    "import/unambiguous": "off",
   },
   "settings": Object {
     "import/extensions": Array [
@@ -66,15 +94,7 @@ Object {
       "node_modules",
     ],
     "import/resolver": Object {
-      "node": Object {
-        "extensions": Array [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx",
-          ".json",
-        ],
-      },
+      "node": Object {},
       "webpack": Object {
         "config": Object {},
       },
