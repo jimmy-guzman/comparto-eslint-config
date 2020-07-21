@@ -109,6 +109,7 @@ Object {
         "@typescript-eslint/prefer-as-const": "error",
         "@typescript-eslint/prefer-namespace-keyword": "error",
         "@typescript-eslint/triple-slash-reference": "error",
+        "babel/camelcase": "off",
         "camelcase": "off",
         "constructor-super": "off",
         "getter-return": "off",

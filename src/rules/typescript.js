@@ -1,6 +1,7 @@
 const { tsConfigPath } = require('../paths')
 
 const conflictingEslintRules = {
+  'babel/camelcase': 'off',
   'camelcase': 'off',
   'constructor-super': 'off',
   'getter-return': 'off',
