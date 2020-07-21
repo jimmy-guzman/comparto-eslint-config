@@ -9,7 +9,8 @@ test('index.js', () => {
     'style',
     'jest',
     'practices',
-    'es6'
+    'es6',
+    'errors'
   ]
 
   expect(index).toEqual({

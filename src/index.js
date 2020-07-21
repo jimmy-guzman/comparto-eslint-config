@@ -7,7 +7,8 @@ const rulesSets = [
   'style',
   'jest',
   'practices',
-  'es6'
+  'es6',
+  'errors'
 ]
 
 module.exports = {
