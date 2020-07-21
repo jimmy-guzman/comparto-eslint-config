@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 const rules = fs.readdirSync('./src/rules/').map(file => file.split('.')[0])
-const scopes = ['workspace', ...rules]
+const scopes = ['workspace', 'all', ...rules]
 
 module.exports = {
   disableEmoji: false,

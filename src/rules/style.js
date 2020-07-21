@@ -7,7 +7,7 @@ module.exports = {
   ],
   plugins: ['prettier', 'jest'],
   rules: {
-    'camelcase': 'off', // revisit
+    'camelcase': 'off',
     'capitalized-comments': 'off',
     'consistent-this': 'off',
     'func-name-matching': 'error',
@@ -42,7 +42,7 @@ module.exports = {
     'max-statements': ['error', 40],
     'max-statements-per-line': ['error', { max: 1 }],
     'multiline-comment-style': 'off',
-    'new-cap': 'error',
+    'new-cap': 'off',
     'no-array-constructor': 'error',
     'no-bitwise': 'off',
     'no-continue': 'error',

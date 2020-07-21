@@ -1,45 +1,77 @@
 module.exports = {
   rules: {
-    // https://eslint.org/docs/rules/accessor-pairs
     'accessor-pairs': 'warn',
-
-    // https://eslint.org/docs/rules/complexity
+    'array-callback-return': 'error',
+    'block-scoped-var': 'error',
+    'class-methods-use-this': 'off',
     'complexity': ['error', 10],
-
-    // https://eslint.org/docs/rules/curly (fixable)
+    'consistent-return': 'error',
     'curly': 'error',
-
-    // https://eslint.org/docs/rules/default-case-last
+    'default-case': 'error',
     'default-case-last': 'error',
-
-    // https://eslint.org/docs/rules/default-param-last
     'default-param-last': 'error',
-
-    // https://eslint.org/docs/rules/eqeqeq,
+    'dot-notation': 'error',
     'eqeqeq': 'error',
-
-    // https://eslint.org/docs/rules/max-classes-per-file
+    'grouped-accessor-pairs': 'off',
+    'guard-for-in': 'error',
     'max-classes-per-file': 'error',
-
-    // https://eslint.org/docs/rules/no-else-return (fixable)
+    'no-alert': 'error',
+    'no-caller': 'error',
+    'no-constructor-return': 'error',
+    'no-div-regex': 'error',
     'no-else-return': 'error',
-
-    // https://eslint.org/docs/rules/no-eval
+    'no-empty-function': 'off',
+    'no-eq-null': 'off',
     'no-eval': 'error',
-
-    // https://eslint.org/docs/rules/no-return-await
+    'no-extend-native': 'error',
+    'no-extra-bind': 'error',
+    'no-extra-label': 'error',
+    'no-implicit-coercion': 'off',
+    'no-implicit-globals': 'error',
+    'no-implied-eval': 'error',
+    'no-invalid-this': 'off',
+    'no-iterator': 'error',
+    'no-label-var': 'error',
+    'no-labels': 'error',
+    'no-lone-blocks': 'error',
+    'no-loop-func': 'error',
+    'no-magic-numbers': 'off',
+    'no-multi-str': 'error',
+    'no-new': 'error',
+    'no-new-func': 'error',
+    'no-new-wrappers': 'error',
+    'no-octal': 'error',
+    'no-octal-escape': 'error',
+    'no-param-reassign': 'off',
+    'no-proto': 'error',
+    'no-redeclare': 'error',
+    'no-restricted-globals': ['error', 'event', 'fdescribe'],
+    'no-restricted-properties': 'off',
+    'no-return-assign': 'error',
     'no-return-await': 'error',
-
-    // https://eslint.org/docs/rules/no-self-compare
+    'no-script-url': 'error',
     'no-self-compare': 'error',
-
-    // https://eslint.org/docs/rules/no-warning-comments
+    'no-sequences': 'error',
+    'no-shadow': 'error',
+    'no-throw-literal': 'error',
+    'no-undef-init': 'error',
+    'no-undefined': 'off',
+    'no-unmodified-loop-condition': 'error',
+    'no-unused-expressions': 'off',
+    'no-useless-call': 'error',
+    'no-useless-computed-key': 'error',
+    'no-useless-concat': 'error',
+    'no-useless-return': 'error',
+    'no-void': 'error',
     'no-warning-comments': 'warn',
-
-    // https://eslint.org/docs/rules/require-await
+    'prefer-named-capture-group': 'off',
+    'prefer-promise-reject-errors': 'off',
+    'prefer-regex-literals': 'off',
+    'radix': 'error',
     'require-await': 'error',
-
-    //https://eslint.org/docs/rules/yoda
+    'require-unicode-regexp': 'off',
+    'strict': 'error',
+    'vars-on-top': 'error',
     'yoda': ['error', 'never']
   }
 }

@@ -74,7 +74,7 @@ Object {
       },
     ],
     "multiline-comment-style": "off",
-    "new-cap": "error",
+    "new-cap": "off",
     "no-array-constructor": "error",
     "no-bitwise": "off",
     "no-continue": "error",
