@@ -1,3 +1,26 @@
+# [4.0.0](https://github.com/comparto/eslint-config/compare/v3.0.0...v4.0.0) (2020-07-22)
+
+
+### Bug Fixes
+
+* **errors:** 🐛 actually include rules ([d0a023c](https://github.com/comparto/eslint-config/commit/d0a023cd1d4578c52b4fec045e4b6106ad5bd12d)), closes [#40](https://github.com/comparto/eslint-config/issues/40)
+
+
+### Features
+
+* **all:** 🎸 expanded core rules, added better es6 support ([ea6045c](https://github.com/comparto/eslint-config/commit/ea6045c5cd8dfff3d6a2ff13d9c6a7d7deba597e)), closes [#41](https://github.com/comparto/eslint-config/issues/41)
+* **imports:** 🎸 added more rules ([2d96567](https://github.com/comparto/eslint-config/commit/2d9656704886077b4899abd79117859faff7fc97)), closes [#38](https://github.com/comparto/eslint-config/issues/38)
+* **jest:** 🎸 added a lot more rules to enforce best practices ([78dbe17](https://github.com/comparto/eslint-config/commit/78dbe17dc111f83fbc97a1fbe7d9ade8cdf0f1f1)), closes [#37](https://github.com/comparto/eslint-config/issues/37)
+* **style:** 🎸 introduced more rules, eslint@7.5.0 support ([b98fd43](https://github.com/comparto/eslint-config/commit/b98fd43118ff61490139f41a9e0211e1afac0f1e))
+
+
+### BREAKING CHANGES
+
+* **all:** 🧨 a lot of new rules introduced that are not auto-fixable(--fix)
+* **style:** 🧨 requires eslint@7.5.0, most new rules are not auto-fixable(--fix)
+* **imports:** 🧨 some of these new import rules are not auto-fixable(--fix)
+* **jest:** 🧨 most of these new jest rules are not auto-fixable(--fix)
+
 # [3.0.0](https://github.com/comparto/eslint-config/compare/v2.0.0...v3.0.0) (2020-07-19)
 
 
