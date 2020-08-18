@@ -31,17 +31,19 @@ jobs:
         run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
         id: nvm
 
-      - name: Setup Node (.nvmrc)
+      - name: Setup Node ${{ steps.nvm.outputs.NVMRC }}
         uses: actions/setup-node@v1
         with:
           node-version: '${{ steps.nvm.outputs.NVMRC }}'
 
-      - run: yarn install --frozen-lockfile
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
 
       - name: Lint Source Code
         run: yarn lint
 
-      - run: yarn test:ci
+      - name: Run Unit Tests
+        run: yarn test:ci
 
       - name: Lint Commits
         uses: wagoid/commitlint-github-action@v2
