@@ -24,12 +24,14 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "test:ci": "yarn test:coverage --ci && yarn find-new-rules",
-    "find-new-rules": "eslint-find-rules --unused ./src/index.js"
+    "find-new-rules": "eslint-find-rules --unused ./src/index.js",
+    "release": "cross-env HUSKY_BYPASS=true npx semantic-release"
   },
   "prettier": "@comparto/prettier-config",
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "commit-msg": "[[ -n $HUSKY_BYPASS ]] || commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
@@ -63,6 +65,8 @@
     "@comparto/prettier-config": "^1.0.0",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
+    "commitlint": "^9.1.2",
+    "cross-env": "^7.0.2",
     "eslint": "^7.5.0",
     "eslint-find-rules": "^3.6.0",
     "husky": "^4.2.5",
