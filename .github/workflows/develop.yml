@@ -38,10 +38,16 @@ jobs:
 
       - run: yarn install --frozen-lockfile
 
-      - run: yarn lint
+      - name: Lint Source Code
+        run: yarn lint
 
       - run: yarn test:ci
-      
+
+      - name: Lint Commits
+        uses: wagoid/commitlint-github-action@v2
+        with:
+          token: ${{ secrets.SEMANTIC_RELEASE }}
+
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1
         with:
