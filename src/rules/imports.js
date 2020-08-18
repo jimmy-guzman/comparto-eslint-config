@@ -1,5 +1,7 @@
 const { doesFileExist } = require('../utils')
 
+const extensions = ['.js', '.mjs', '.jsx', '.ts', '.tsx']
+
 module.exports = {
   plugins: ['import'],
   rules: {
@@ -64,10 +66,10 @@ module.exports = {
     'import/unambiguous': 'off'
   },
   settings: {
-    'import/extensions': ['.js', '.mjs', '.jsx', '.ts', '.tsx'],
+    'import/extensions': extensions,
     'import/ignore': ['node_modules'],
     'import/resolver': {
-      node: {},
+      node: { extensions },
       webpack: {
         config: doesFileExist('webpack.config.js') ? 'webpack.config.js' : {}
       }

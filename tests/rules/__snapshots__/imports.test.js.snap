@@ -94,7 +94,15 @@ Object {
       "node_modules",
     ],
     "import/resolver": Object {
-      "node": Object {},
+      "node": Object {
+        "extensions": Array [
+          ".js",
+          ".mjs",
+          ".jsx",
+          ".ts",
+          ".tsx",
+        ],
+      },
       "webpack": Object {
         "config": Object {},
       },
