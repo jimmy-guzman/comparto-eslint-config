@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/comparto/eslint-config/compare/v4.0.0...v4.0.1) (2020-08-18)
+
+
+### Bug Fixes
+
+* **imports:** 🐛 resolved no-unresolved and extensions conflicts ([3bcf34f](https://github.com/comparto/eslint-config/commit/3bcf34fd5ae2376feab9ba986250580aff4121dd)), closes [#45](https://github.com/comparto/eslint-config/issues/45)
+
 # [4.0.0](https://github.com/comparto/eslint-config/compare/v3.0.0...v4.0.0) (2020-07-22)
 
 
