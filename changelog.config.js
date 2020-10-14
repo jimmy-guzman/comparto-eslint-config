@@ -1,11 +1,8 @@
-const fs = require('fs')
-
-const rules = fs.readdirSync('./src/rules/').map(file => file.split('.')[0])
-const scopes = ['workspace', 'all', ...rules]
+const { scopes, types: list } = require('./.config/changelog')
 
 module.exports = {
   disableEmoji: false,
-  list: ['test', 'feat', 'fix', 'chore', 'docs', 'refactor', 'style', 'ci'],
+  list,
   maxMessageLength: 64,
   minMessageLength: 3,
   questions: ['type', 'scope', 'subject', 'body', 'breaking', 'issues'],

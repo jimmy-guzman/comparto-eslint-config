@@ -25,7 +25,8 @@
     "test:coverage": "jest --coverage",
     "test:ci": "yarn test:coverage --ci && yarn find-new-rules",
     "find-new-rules": "eslint-find-rules --unused ./src/index.js",
-    "release": "cross-env HUSKY_BYPASS=true npx semantic-release"
+    "release": "cross-env HUSKY_BYPASS=true npx semantic-release",
+    "cz": "git-cz"
   },
   "prettier": "@comparto/prettier-config",
   "husky": {
@@ -69,6 +70,7 @@
     "cross-env": "^7.0.2",
     "eslint": "^7.5.0",
     "eslint-find-rules": "^3.6.0",
+    "git-cz": "^4.7.1",
     "husky": "^4.2.5",
     "jest": "^26.1.0",
     "lint-staged": "^10.2.10",
