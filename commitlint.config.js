@@ -1,10 +1,4 @@
-const fs = require('fs')
-
-const gitCzConfig = require('./changelog.config')
-
-const rules = fs.readdirSync('./src/rules/').map(file => file.split('.')[0])
-const scopes = ['workspace', 'all', 'release', ...rules]
-const types = Object.keys(gitCzConfig.types)
+const { scopes, types } = require('./.config/changelog')
 
 module.exports = {
   rules: {
