@@ -1,9 +1,9 @@
-const { scopes, types: list } = require('./.config/changelog')
+const { scopes, types: list, maxMessageLength } = require('./.config/changelog')
 
 module.exports = {
   disableEmoji: false,
   list,
-  maxMessageLength: 64,
+  maxMessageLength,
   minMessageLength: 3,
   questions: ['type', 'scope', 'subject', 'body', 'breaking', 'issues'],
   scopes,
