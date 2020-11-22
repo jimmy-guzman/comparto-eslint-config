@@ -1,7 +1,34 @@
+const eslintOverrides = {
+  'class-methods-use-this': [
+    'error',
+    {
+      exceptMethods: [
+        'render',
+        'getInitialState',
+        'getDefaultProps',
+        'getChildContext',
+        'componentWillMount',
+        'UNSAFE_componentWillMount',
+        'componentDidMount',
+        'componentWillReceiveProps',
+        'UNSAFE_componentWillReceiveProps',
+        'shouldComponentUpdate',
+        'componentWillUpdate',
+        'UNSAFE_componentWillUpdate',
+        'componentDidUpdate',
+        'componentWillUnmount',
+        'componentDidCatch',
+        'getSnapshotBeforeUpdate'
+      ]
+    }
+  ]
+}
+
 module.exports = {
   extends: ['plugin:jsx-a11y/recommended'],
   plugins: ['react', 'react-hooks', 'jsx-a11y'],
   rules: {
+    ...eslintOverrides,
     'jsx-a11y/lang': 'error',
     'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error',
