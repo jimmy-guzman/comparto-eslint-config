@@ -37,36 +37,6 @@ Object {
           },
           Object {
             "format": Array [
-              "camelCase",
-              "PascalCase",
-            ],
-            "selector": "function",
-          },
-          Object {
-            "format": Array [
-              "camelCase",
-            ],
-            "leadingUnderscore": "allow",
-            "selector": "parameter",
-          },
-          Object {
-            "format": Array [
-              "camelCase",
-            ],
-            "leadingUnderscore": "require",
-            "modifiers": Array [
-              "private",
-            ],
-            "selector": "memberLike",
-          },
-          Object {
-            "format": Array [
-              "PascalCase",
-            ],
-            "selector": "typeLike",
-          },
-          Object {
-            "format": Array [
               "PascalCase",
             ],
             "prefix": Array [
@@ -83,6 +53,40 @@ Object {
             ],
           },
           Object {
+            "format": Array [
+              "camelCase",
+              "PascalCase",
+            ],
+            "selector": "function",
+          },
+          Object {
+            "format": Array [
+              "camelCase",
+            ],
+            "leadingUnderscore": "allow",
+            "selector": "parameter",
+          },
+          Object {
+            "format": Array [
+              "PascalCase",
+            ],
+            "selector": "typeLike",
+          },
+          Object {
+            "format": Array [
+              "PascalCase",
+              "UPPER_CASE",
+            ],
+            "selector": "enum",
+          },
+          Object {
+            "format": Array [
+              "PascalCase",
+              "UPPER_CASE",
+            ],
+            "selector": "enumMember",
+          },
+          Object {
             "custom": Object {
               "match": false,
               "regex": "^I[A-Z]",
@@ -91,6 +95,16 @@ Object {
               "PascalCase",
             ],
             "selector": "interface",
+          },
+          Object {
+            "format": Array [
+              "camelCase",
+            ],
+            "leadingUnderscore": "require",
+            "modifiers": Array [
+              "private",
+            ],
+            "selector": "memberLike",
           },
           Object {
             "format": null,
