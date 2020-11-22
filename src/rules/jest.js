@@ -59,5 +59,13 @@ module.exports = {
     'jest/valid-expect': 'error',
     'jest/valid-expect-in-promise': 'error',
     'jest/valid-title': 'error'
-  }
+  },
+  overrides: [
+    {
+      files: ['**/*.test.*', '**/*.spec.*'],
+      rules: {
+        'max-lines-per-function': 'off'
+      }
+    }
+  ]
 }
