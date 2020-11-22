@@ -4,13 +4,13 @@ test('index.js', () => {
   const expectedRules = [
     'base',
     'imports',
-    'react',
-    'typescript',
-    'style',
-    'jest',
     'practices',
     'es6',
-    'errors'
+    'errors',
+    'style',
+    'react',
+    'typescript',
+    'jest'
   ]
 
   expect(index).toEqual({
