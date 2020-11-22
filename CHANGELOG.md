@@ -1,3 +1,15 @@
+## [5.0.1](https://github.com/comparto/eslint-config/compare/v5.0.0...v5.0.1) (2020-11-22)
+
+
+### Bug Fixes
+
+* **imports:** 🐛 resolved typescript settings not being applied every time ([6938d1c](https://github.com/comparto/eslint-config/commit/6938d1c50b28ac6fcea08dd2c2f706b93b9159fa)), closes [#55](https://github.com/comparto/eslint-config/issues/55)
+* **jest:** 🐛 disable max-lines-per-function to account for `describe` ([70f5670](https://github.com/comparto/eslint-config/commit/70f567069e11abe1b4340f892f6381a47005588f))
+* **react:** 🐛 added React methods to `class-methods-use-this` exceptions ([ccd75ce](https://github.com/comparto/eslint-config/commit/ccd75ce6e5f5a2fe73d9c2a32f503b759de2074a)), closes [#58](https://github.com/comparto/eslint-config/issues/58)
+* **style:** 🐛 disable prettier conflicting rules ([304226c](https://github.com/comparto/eslint-config/commit/304226cbb18a337a2c3b6ae556380d2b8c1fa88a))
+* **typescript:** 🐛 allow `PascalCase` for `React` components declarations ([309060b](https://github.com/comparto/eslint-config/commit/309060b830a5b841f19c928abab48f46245e900f)), closes [#56](https://github.com/comparto/eslint-config/issues/56)
+* **typescript:** 🐛 resolved 'React' was used before it was defined error ([1debcbb](https://github.com/comparto/eslint-config/commit/1debcbbbc9ea66a143a3bd2480eb00ab00956a4d)), closes [#57](https://github.com/comparto/eslint-config/issues/57)
+
 # [5.0.0](https://github.com/comparto/eslint-config/compare/v4.0.1...v5.0.0) (2020-11-22)
 
 
