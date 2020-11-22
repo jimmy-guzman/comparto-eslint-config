@@ -67,7 +67,11 @@ module.exports = {
   },
   settings: {
     'import/extensions': extensions,
+    'import/external-module-folders': ['node_modules', 'node_modules/@types'],
     'import/ignore': ['node_modules'],
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx', '.d.ts']
+    },
     'import/resolver': {
       node: { extensions },
       webpack: {
