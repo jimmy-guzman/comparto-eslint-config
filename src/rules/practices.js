@@ -1,9 +1,18 @@
+/**
+ * Eslint's javascript rules to enforce best practices
+ * https://eslint.org/docs/rules/#best-practices
+ */
 module.exports = {
   rules: {
     'accessor-pairs': 'warn',
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
-    'class-methods-use-this': 'off',
+
+    /**
+     * Enforce that class methods utilize `this`
+     * - https://eslint.org/docs/rules/class-methods-use-this
+     */
+    'class-methods-use-this': ['error', { exceptMethods: [] }],
     'complexity': ['error', 10],
     'consistent-return': 'error',
     'curly': 'error',
@@ -12,7 +21,12 @@ module.exports = {
     'default-param-last': 'error',
     'dot-notation': 'error',
     'eqeqeq': 'error',
-    'grouped-accessor-pairs': 'off',
+
+    /**
+     * Require grouped accessor pairs in object literals and classes
+     * - https://eslint.org/docs/rules/grouped-accessor-pairs
+     */
+    'grouped-accessor-pairs': ['error', 'getBeforeSet'],
     'guard-for-in': 'error',
     'max-classes-per-file': 'error',
     'no-alert': 'error',
@@ -20,13 +34,37 @@ module.exports = {
     'no-constructor-return': 'error',
     'no-div-regex': 'error',
     'no-else-return': 'error',
-    'no-empty-function': 'off',
+
+    /**
+     * Disallow empty functions
+     * - https://eslint.org/docs/rules/no-empty-function
+     */
+    'no-empty-function': [
+      'error',
+      {
+        allow: ['arrowFunctions', 'functions', 'methods']
+      }
+    ],
     'no-eq-null': 'off',
     'no-eval': 'error',
     'no-extend-native': 'error',
     'no-extra-bind': 'error',
     'no-extra-label': 'error',
-    'no-implicit-coercion': 'off',
+
+    /**
+     * Disallow the type conversion with shorter notations
+     * - works with `--fix`
+     * - https://eslint.org/docs/rules/no-implicit-coercion
+     */
+    'no-implicit-coercion': [
+      'error',
+      {
+        boolean: true,
+        number: true,
+        string: true,
+        allow: []
+      }
+    ],
     'no-implicit-globals': 'error',
     'no-implied-eval': 'error',
     'no-invalid-this': 'off',
@@ -35,12 +73,22 @@ module.exports = {
     'no-labels': 'error',
     'no-lone-blocks': 'error',
     'no-loop-func': 'error',
+
+    /**
+     * Disallow Magic Numbers
+     * - https://eslint.org/docs/rules/no-magic-numbers
+     */
     'no-magic-numbers': 'off',
     'no-multi-str': 'error',
     'no-new': 'error',
     'no-new-func': 'error',
     'no-new-wrappers': 'error',
-    'no-nonoctal-decimal-escape': 'off',
+
+    /**
+     * Disallow `\8` and `\9` escape sequences in string literals
+     * - https://eslint.org/docs/rules/no-nonoctal-decimal-escape
+     */
+    'no-nonoctal-decimal-escape': 'error',
     'no-octal': 'error',
     'no-octal-escape': 'error',
     'no-param-reassign': 'off',
@@ -58,7 +106,19 @@ module.exports = {
     'no-undef-init': 'error',
     'no-undefined': 'off',
     'no-unmodified-loop-condition': 'error',
-    'no-unused-expressions': 'off',
+
+    /**
+     * Disallow Unused Expressions
+     * - https://eslint.org/docs/rules/no-unused-expressions
+     */
+    'no-unused-expressions': [
+      'error',
+      {
+        allowShortCircuit: false,
+        allowTernary: false,
+        allowTaggedTemplates: false
+      }
+    ],
     'no-useless-call': 'error',
     'no-useless-computed-key': 'error',
     'no-useless-concat': 'error',
@@ -66,7 +126,12 @@ module.exports = {
     'no-void': 'error',
     'no-warning-comments': 'warn',
     'prefer-named-capture-group': 'off',
-    'prefer-promise-reject-errors': 'off',
+
+    /**
+     * Require using Error objects as Promise rejection reasons
+     * - https://eslint.org/docs/rules/prefer-promise-reject-errors
+     */
+    'prefer-promise-reject-errors': ['error', { allowEmptyReject: true }],
     'prefer-regex-literals': 'off',
     'radix': 'error',
     'require-await': 'error',
