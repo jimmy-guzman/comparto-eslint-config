@@ -1,12 +1,12 @@
-const { scopes, types } = require('./.config/changelog')
+const { scopes, types, maxMessageLength } = require('./.config/changelog')
 
 module.exports = {
   rules: {
     'body-leading-blank': [1, 'always'],
-    'body-max-line-length': [2, 'always', 100],
+    'body-max-line-length': [2, 'always', 150],
     'footer-leading-blank': [1, 'always'],
     'footer-max-line-length': [2, 'always', 100],
-    'header-max-length': [2, 'always', 64],
+    'header-max-length': [2, 'always', maxMessageLength],
     'scope-case': [2, 'always', 'lower-case'],
     'scope-enum': [2, 'always', scopes],
     'subject-case': [
