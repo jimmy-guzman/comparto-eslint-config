@@ -25,6 +25,7 @@
     "test:coverage": "jest --coverage",
     "test:ci": "yarn test:coverage --ci && yarn find-new-rules",
     "find-new-rules": "eslint-find-rules --unused ./src/index.js",
+    "find-new-rules:ts": "eslint-find-rules --unused ./tests/typescript-rules.js",
     "release": "cross-env HUSKY_BYPASS=true npx semantic-release",
     "cz": "git-cz"
   },
