@@ -5,6 +5,17 @@ Object {
   "env": Object {
     "jest/globals": true,
   },
+  "overrides": Array [
+    Object {
+      "files": Array [
+        "**/*.test.*",
+        "**/*.spec.*",
+      ],
+      "rules": Object {
+        "max-lines-per-function": "off",
+      },
+    },
+  ],
   "plugins": Array [
     "jest",
   ],
