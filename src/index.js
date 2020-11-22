@@ -2,13 +2,13 @@ const rulesDirectory = './rules'
 const rulesSets = [
   'base',
   'imports',
-  'react',
-  'typescript',
-  'style',
-  'jest',
   'practices',
   'es6',
-  'errors'
+  'errors',
+  'style',
+  'react',
+  'typescript',
+  'jest'
 ]
 
 module.exports = {
