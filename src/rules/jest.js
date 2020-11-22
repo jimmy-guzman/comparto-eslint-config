@@ -6,9 +6,19 @@ module.exports = {
     'jest/expect-expect': 'warn',
     'jest/lowercase-name': 'error',
     'jest/no-commented-out-tests': 'error',
-    'jest/no-conditional-expect': 'off',
+
+    /**
+     * Prevent calling `expect` conditionally
+     * - https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-conditional-expect.md
+     */
+    'jest/no-conditional-expect': 'error',
     'jest/no-deprecated-functions': 'warn',
     'jest/no-disabled-tests': 'warn',
+
+    /**
+     * Avoid using a callback in asynchronous tests and hooks
+     * - https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-done-callback.md
+     */
     'jest/no-done-callback': 'error',
     'jest/no-duplicate-hooks': 'error',
     'jest/no-export': 'error',
@@ -16,7 +26,12 @@ module.exports = {
     'jest/no-hooks': 'off',
     'jest/no-identical-title': 'error',
     'jest/no-if': 'error',
-    'jest/no-interpolation-in-snapshots': 'off',
+
+    /**
+     * Disallow string interpolation inside snapshots
+     * - https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-interpolation-in-snapshots.md
+     */
+    'jest/no-interpolation-in-snapshots': 'error',
     'jest/no-jasmine-globals': 'warn',
     'jest/no-jest-import': 'error',
     'jest/no-large-snapshots': [
