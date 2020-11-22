@@ -13,7 +13,7 @@ module.exports = {
     'func-name-matching': 'error',
     'func-names': 'error',
     'func-style': 'off',
-    'id-denylist': ['error', 'data', 'err', 'e', 'cb', 'callback'],
+    'id-denylist': 'off',
     'id-length': 'off',
     'id-match': [
       // camelCase, PascalCase, __identifier, CONST_VALUE, stream$, $el
@@ -22,21 +22,14 @@ module.exports = {
     ],
     'init-declarations': 'off',
     'line-comment-position': 'off',
-    'lines-around-comment': [
-      'error',
-      {
-        allowArrayEnd: false,
-        allowArrayStart: true,
-        allowObjectEnd: false,
-        allowObjectStart: true,
-        beforeBlockComment: true,
-        beforeLineComment: true
-      }
-    ],
+    'lines-around-comment': 'off',
     'lines-between-class-members': 'off',
     'max-depth': ['error', 4],
     'max-lines': 'off',
-    'max-lines-per-function': ['error', 100],
+    'max-lines-per-function': [
+      'error',
+      { max: 100, skipBlankLines: true, skipComments: true }
+    ],
     'max-nested-callbacks': ['error', 7],
     'max-params': ['error', 7],
     'max-statements': ['error', 40],
