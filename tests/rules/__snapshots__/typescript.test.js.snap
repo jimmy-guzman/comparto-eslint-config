@@ -139,19 +139,6 @@ Object {
         "require-await": "off",
         "valid-typeof": "off",
       },
-      "settings": Object {
-        "import/external-module-folders": Array [
-          "node_modules",
-          "node_modules/@types",
-        ],
-        "import/parsers": Object {
-          "@typescript-eslint/parser": Array [
-            ".ts",
-            ".tsx",
-            ".d.ts",
-          ],
-        },
-      },
     },
   ],
 }

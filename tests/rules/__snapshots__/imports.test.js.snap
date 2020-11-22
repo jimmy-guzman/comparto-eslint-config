@@ -90,9 +90,20 @@ Object {
       ".ts",
       ".tsx",
     ],
+    "import/external-module-folders": Array [
+      "node_modules",
+      "node_modules/@types",
+    ],
     "import/ignore": Array [
       "node_modules",
     ],
+    "import/parsers": Object {
+      "@typescript-eslint/parser": Array [
+        ".ts",
+        ".tsx",
+        ".d.ts",
+      ],
+    },
     "import/resolver": Object {
       "node": Object {
         "extensions": Array [

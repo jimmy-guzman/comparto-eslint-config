@@ -106,15 +106,6 @@ module.exports = {
         '@typescript-eslint/prefer-as-const': 'error',
         '@typescript-eslint/prefer-namespace-keyword': 'error',
         '@typescript-eslint/triple-slash-reference': 'error'
-      },
-      settings: {
-        'import/external-module-folders': [
-          'node_modules',
-          'node_modules/@types'
-        ],
-        'import/parsers': {
-          '@typescript-eslint/parser': ['.ts', '.tsx', '.d.ts']
-        }
       }
     }
   ]
