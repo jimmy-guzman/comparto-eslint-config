@@ -30,9 +30,17 @@ Object {
           Object {
             "format": Array [
               "camelCase",
+              "PascalCase",
               "UPPER_CASE",
             ],
             "selector": "variable",
+          },
+          Object {
+            "format": Array [
+              "camelCase",
+              "PascalCase",
+            ],
+            "selector": "function",
           },
           Object {
             "format": Array [
@@ -75,13 +83,6 @@ Object {
             ],
           },
           Object {
-            "format": Array [
-              "camelCase",
-              "UPPER_CASE",
-            ],
-            "selector": "variable",
-          },
-          Object {
             "custom": Object {
               "match": false,
               "regex": "^I[A-Z]",
@@ -90,6 +91,14 @@ Object {
               "PascalCase",
             ],
             "selector": "interface",
+          },
+          Object {
+            "format": null,
+            "selector": "property",
+            "types": Array [
+              "boolean",
+              "string",
+            ],
           },
         ],
         "@typescript-eslint/no-array-constructor": "error",

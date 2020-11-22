@@ -45,6 +45,10 @@ module.exports = {
         '@typescript-eslint/ban-ts-comment': 'error',
         '@typescript-eslint/ban-types': 'error',
         '@typescript-eslint/explicit-module-boundary-types': 'warn',
+        /**
+         * Enforces naming conventions for everything across a codebase
+         * - https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/naming-convention.md
+         */
         '@typescript-eslint/naming-convention': [
           'error',
           {
@@ -53,7 +57,11 @@ module.exports = {
           },
           {
             selector: 'variable',
-            format: ['camelCase', 'UPPER_CASE']
+            format: ['camelCase', 'PascalCase', 'UPPER_CASE']
+          },
+          {
+            selector: 'function',
+            format: ['camelCase', 'PascalCase']
           },
           {
             selector: 'parameter',
@@ -77,16 +85,17 @@ module.exports = {
             prefix: ['is', 'should', 'has', 'can', 'did', 'will']
           },
           {
-            selector: 'variable',
-            format: ['camelCase', 'UPPER_CASE']
-          },
-          {
             selector: 'interface',
             format: ['PascalCase'],
             custom: {
               regex: '^I[A-Z]',
               match: false
             }
+          },
+          {
+            selector: 'property',
+            types: ['boolean', 'string'],
+            format: null
           }
         ],
         '@typescript-eslint/no-array-constructor': 'error',
