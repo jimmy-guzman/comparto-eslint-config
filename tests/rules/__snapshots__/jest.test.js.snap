@@ -19,7 +19,7 @@ Object {
     "jest/expect-expect": "warn",
     "jest/lowercase-name": "error",
     "jest/no-commented-out-tests": "error",
-    "jest/no-conditional-expect": "off",
+    "jest/no-conditional-expect": "error",
     "jest/no-deprecated-functions": "warn",
     "jest/no-disabled-tests": "warn",
     "jest/no-done-callback": "error",
@@ -29,7 +29,7 @@ Object {
     "jest/no-hooks": "off",
     "jest/no-identical-title": "error",
     "jest/no-if": "error",
-    "jest/no-interpolation-in-snapshots": "off",
+    "jest/no-interpolation-in-snapshots": "error",
     "jest/no-jasmine-globals": "warn",
     "jest/no-jest-import": "error",
     "jest/no-large-snapshots": Array [
