@@ -1,3 +1,30 @@
+# [5.0.0](https://github.com/comparto/eslint-config/compare/v4.0.1...v5.0.0) (2020-11-22)
+
+
+### Features
+
+* **deps:** 🎸 @typescript-eslint/*[@4](https://github.com/4).8.1 ([abbb84b](https://github.com/comparto/eslint-config/commit/abbb84bee6f552ec7f3b91334d659ac947fb9fcb))
+* **deps:** 🎸 eslint-config-prettier@6.15.0 ([60de0b4](https://github.com/comparto/eslint-config/commit/60de0b42ae12b30ce77c9adcd4a363e403555369))
+* **deps:** 🎸 eslint-import-resolver-webpack@0.13.0 ([fc5f4b3](https://github.com/comparto/eslint-config/commit/fc5f4b398e68cdc079a904c46707b8fe5b1dc726))
+* **deps:** 🎸 eslint-plugin-import@2.21.2 ([d18dbcc](https://github.com/comparto/eslint-config/commit/d18dbcc9629b848f0fe948b3b1db91146875cc68))
+* **deps:** 🎸 eslint-plugin-jest@24.1.3 ([14a4a2a](https://github.com/comparto/eslint-config/commit/14a4a2a6c53ef8becfc4f8b09e9bd54a5edadb08))
+* **deps:** 🎸 eslint-plugin-jsx-a11y@6.3.1 ([d913791](https://github.com/comparto/eslint-config/commit/d9137910719700e338cbb52dbf3e1da7de37ce45))
+* **deps:** 🎸 eslint-plugin-prettier@3.14.0 ([9ea923a](https://github.com/comparto/eslint-config/commit/9ea923a2de2881e4edfe0f8a3ed316c26417bafb))
+* **deps:** 🎸 eslint-plugin-react-hooks@4.2.0 ([10d2c21](https://github.com/comparto/eslint-config/commit/10d2c217d01a57b801b083702b25d01c4ab83e02))
+* **deps:** 🎸 eslint-plugin-react@7.21.5 ([ff08347](https://github.com/comparto/eslint-config/commit/ff083476bc10e7b6eeccdf80febadcb154e4ceda))
+* **deps:** 🎸 eslint@7.14.0 ([4e00196](https://github.com/comparto/eslint-config/commit/4e001963001520f3a135eebf94de673608e50e5b))
+* **jest:** 🎸 enforce no-conditional-expect, no-interpolation-in-snapshots ([e72f82a](https://github.com/comparto/eslint-config/commit/e72f82a99ff423c0fdc9d2d0cdf6085c549af072))
+* **practices:** 🎸 enabled multipe rules to improve practices ([5304bbb](https://github.com/comparto/eslint-config/commit/5304bbb974813868df15aabf69fec661e0d7743b))
+
+
+### BREAKING CHANGES
+
+* **jest:** 🧨 `jest/no-conditional-expect` and `jest/no-interpolation-in-snapshots`
+are not auto-fixable
+* **practices:** 🧨 `class-methods-use-this`, `grouped-accessor-pairs`, `no-empty-function`,
+`no-nonoctal-decimal-escape`, `no-unused-expressions`, and `prefer-promise-reject-errors`
+are not auto-fixable.
+
 ## [4.0.1](https://github.com/comparto/eslint-config/compare/v4.0.0...v4.0.1) (2020-08-18)
 
 

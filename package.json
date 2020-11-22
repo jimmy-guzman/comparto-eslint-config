@@ -1,6 +1,6 @@
 {
   "name": "@comparto/eslint-config",
-  "version": "4.0.1",
+  "version": "5.0.0",
   "main": "src/index.js",
   "repository": {
     "type": "git",
