@@ -19,6 +19,7 @@ const conflictingEslintRules = {
   'no-obj-calls': 'off',
   'no-redeclare': 'off',
   'no-setter-return': 'off',
+  'no-shadow': 'off',
   'no-this-before-super': 'off',
   'no-undef': 'off',
   'no-unreachable': 'off',
@@ -32,6 +33,67 @@ const conflictingEslintRules = {
   'require-await': 'off',
   'valid-typeof': 'off'
 }
+
+const namingConventions = [
+  {
+    selector: 'default',
+    format: ['camelCase']
+  },
+  {
+    selector: 'variable',
+    format: ['camelCase', 'PascalCase', 'UPPER_CASE']
+  },
+  {
+    selector: 'variable',
+    types: ['boolean'],
+    format: ['PascalCase'],
+    prefix: ['is', 'should', 'has', 'can', 'did', 'will']
+  },
+  {
+    selector: 'function',
+    format: ['camelCase', 'PascalCase']
+  },
+  {
+    selector: 'parameter',
+    format: ['camelCase'],
+    leadingUnderscore: 'allow'
+  },
+  {
+    selector: 'typeLike',
+    format: ['PascalCase']
+  },
+  {
+    selector: 'enum',
+    format: ['PascalCase', 'UPPER_CASE']
+  },
+  {
+    selector: 'enumMember',
+    format: ['PascalCase', 'UPPER_CASE']
+  },
+  {
+    selector: 'interface',
+    format: ['PascalCase'],
+    custom: {
+      regex: '^I[A-Z]',
+      match: false
+    }
+  },
+  {
+    selector: 'memberLike',
+    modifiers: ['private'],
+    format: ['camelCase'],
+    leadingUnderscore: 'require'
+  },
+  {
+    selector: 'property',
+    types: ['boolean', 'string'],
+    format: null
+  },
+  {
+    selector: 'method',
+    format: ['camelCase', 'PascalCase']
+  }
+]
 
 module.exports = {
   overrides: [
@@ -50,63 +112,7 @@ module.exports = {
          * Enforces naming conventions for everything across a codebase
          * - https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/naming-convention.md
          */
-        '@typescript-eslint/naming-convention': [
-          'error',
-          {
-            selector: 'default',
-            format: ['camelCase']
-          },
-          {
-            selector: 'variable',
-            format: ['camelCase', 'PascalCase', 'UPPER_CASE']
-          },
-          {
-            selector: 'variable',
-            types: ['boolean'],
-            format: ['PascalCase'],
-            prefix: ['is', 'should', 'has', 'can', 'did', 'will']
-          },
-          {
-            selector: 'function',
-            format: ['camelCase', 'PascalCase']
-          },
-          {
-            selector: 'parameter',
-            format: ['camelCase'],
-            leadingUnderscore: 'allow'
-          },
-          {
-            selector: 'typeLike',
-            format: ['PascalCase']
-          },
-          {
-            selector: 'enum',
-            format: ['PascalCase', 'UPPER_CASE']
-          },
-          {
-            selector: 'enumMember',
-            format: ['PascalCase', 'UPPER_CASE']
-          },
-          {
-            selector: 'interface',
-            format: ['PascalCase'],
-            custom: {
-              regex: '^I[A-Z]',
-              match: false
-            }
-          },
-          {
-            selector: 'memberLike',
-            modifiers: ['private'],
-            format: ['camelCase'],
-            leadingUnderscore: 'require'
-          },
-          {
-            selector: 'property',
-            types: ['boolean', 'string'],
-            format: null
-          }
-        ],
+        '@typescript-eslint/naming-convention': ['error', ...namingConventions],
         '@typescript-eslint/no-array-constructor': 'error',
         '@typescript-eslint/no-empty-function': 'error',
         '@typescript-eslint/no-empty-interface': 'error',
@@ -118,6 +124,11 @@ module.exports = {
         '@typescript-eslint/no-namespace': 'error',
         '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
         '@typescript-eslint/no-non-null-assertion': 'warn',
+        /**
+         * Disallow variable declarations from shadowing variables declared in the outer scope
+         * - https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-shadow.md
+         */
+        '@typescript-eslint/no-shadow': 'error',
         '@typescript-eslint/no-this-alias': 'error',
         '@typescript-eslint/no-unused-vars': 'warn',
         '@typescript-eslint/no-var-requires': 'error',

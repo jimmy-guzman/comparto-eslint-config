@@ -62,9 +62,10 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/*.test.*', '**/*.spec.*'],
+      files: ['**/__tests__/**/*', '**/*.{spec,test}.*'],
       rules: {
-        'max-lines-per-function': 'off'
+        'max-lines-per-function': 'off',
+        'react/display-name': 'off'
       }
     }
   ]

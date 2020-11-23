@@ -8,11 +8,12 @@ Object {
   "overrides": Array [
     Object {
       "files": Array [
-        "**/*.test.*",
-        "**/*.spec.*",
+        "**/__tests__/**/*",
+        "**/*.{spec,test}.*",
       ],
       "rules": Object {
         "max-lines-per-function": "off",
+        "react/display-name": "off",
       },
     },
   ],
