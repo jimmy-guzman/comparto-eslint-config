@@ -15,7 +15,7 @@ test('index.js', () => {
 
   expect(index).toEqual({
     extends: expectedRules.map(
-      expectedRule => `${process.cwd()}/src/rules/${expectedRule}.js`
+      expectedRule => `${process.cwd()}/src/rules/${expectedRule}/index.js`
     ),
     rules: {}
   })

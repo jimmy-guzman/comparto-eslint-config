@@ -1,4 +1,4 @@
-const { doesFileExist } = require('../utils')
+const { doesFileExist } = require('../../utils')
 
 const extensions = ['.js', '.mjs', '.jsx', '.ts', '.tsx']
 
