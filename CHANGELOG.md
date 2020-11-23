@@ -1,3 +1,11 @@
+## [5.0.2](https://github.com/comparto/eslint-config/compare/v5.0.1...v5.0.2) (2020-11-23)
+
+
+### Bug Fixes
+
+* **typescript:** 🐛 resolved no-shadow false positives with enums ([acb7176](https://github.com/comparto/eslint-config/commit/acb71768df3a688cda45bea189e4de0d38947e8d))
+* **typescript:** 🐛 support `UPPER_CASE` for enums & enumMembers ([8fb4ac2](https://github.com/comparto/eslint-config/commit/8fb4ac24493343bcfad3f37700dce607a171d10e))
+
 ## [5.0.1](https://github.com/comparto/eslint-config/compare/v5.0.0...v5.0.1) (2020-11-22)
 
 
