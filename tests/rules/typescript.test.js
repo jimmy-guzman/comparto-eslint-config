@@ -1,7 +1,7 @@
 const typescript = require('../../src/rules/typescript')
 
 jest.mock('../../src/paths', () => ({
-  tsConfigPath: () => 'mock-tsconfig-path'
+  tsConfigPath: 'mock-tsconfig-path'
 }))
 
 describe('typescript.js', () => {
