@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`typescript.js should create default configuration 1`] = `
+exports[`typescript rules should create default configuration 1`] = `
 Object {
   "overrides": Array [
     Object {

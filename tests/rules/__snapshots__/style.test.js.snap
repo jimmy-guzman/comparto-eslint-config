@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`style.js should create default configuration 1`] = `
+exports[`style rules should create default configuration 1`] = `
 Object {
   "extends": Array [
     "plugin:prettier/recommended",

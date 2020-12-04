@@ -4,7 +4,7 @@ jest.mock('../../src/paths', () => ({
   tsConfigPath: 'mock-tsconfig-path'
 }))
 
-describe('typescript.js', () => {
+describe('typescript rules', () => {
   it('should create default configuration', () => {
     expect(typescript).toMatchSnapshot()
   })

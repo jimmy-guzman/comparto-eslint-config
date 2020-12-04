@@ -1,4 +1,4 @@
-describe('imports.js', () => {
+describe('imports rules', () => {
   beforeEach(() => {
     jest.resetModules()
   })

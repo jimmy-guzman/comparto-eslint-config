@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`jest.js 1`] = `
+exports[`jest should have default jest rules 1`] = `
 Object {
   "env": Object {
     "jest/globals": true,
