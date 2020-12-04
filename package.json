@@ -26,6 +26,7 @@
     "test:ci": "yarn test:coverage --ci && yarn find-new-rules",
     "find-new-rules": "eslint-find-rules --unused ./src/index.js",
     "find-new-rules:ts": "eslint-find-rules --unused ./tests/typescript-rules.js",
+    "find-new-rules:jest": "eslint-find-rules --unused ./tests/jest-rules.js",
     "release": "cross-env HUSKY_BYPASS=true npx semantic-release",
     "cz": "git-c c"
   },
@@ -64,7 +65,9 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-testing-library": "^3.10.1",
+    "read-pkg-up": "^7.0.1"
   },
   "devDependencies": {
     "@comparto/git-c": "^1.0.1",

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`react.js 1`] = `
+exports[`react rules 1`] = `
 Object {
   "extends": Array [
     "plugin:jsx-a11y/recommended",

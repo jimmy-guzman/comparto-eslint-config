@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`es6.js 1`] = `
+exports[`es6 rules 1`] = `
 Object {
   "plugins": Array [
     "babel",

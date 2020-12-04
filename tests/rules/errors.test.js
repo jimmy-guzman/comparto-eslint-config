@@ -1,5 +1,5 @@
 const errors = require('../../src/rules/errors')
 
-test('errors.js', () => {
+test('errors rules', () => {
   expect(errors).toMatchSnapshot()
 })

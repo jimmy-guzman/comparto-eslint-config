@@ -1,6 +1,6 @@
 const style = require('../../src/rules/style')
 
-describe('style.js', () => {
+describe('style rules', () => {
   it('should create default configuration', () => {
     expect(style).toMatchSnapshot()
   })

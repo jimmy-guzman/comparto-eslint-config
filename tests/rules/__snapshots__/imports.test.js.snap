@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`imports.js should create default configuration 1`] = `
+exports[`imports rules should create default configuration 1`] = `
 Object {
   "plugins": Array [
     "import",

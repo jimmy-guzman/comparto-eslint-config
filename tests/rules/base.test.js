@@ -1,5 +1,5 @@
 const base = require('../../src/rules/base')
 
-test('base.js', () => {
+test('base rules', () => {
   expect(base).toMatchSnapshot()
 })

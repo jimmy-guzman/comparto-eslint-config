@@ -1,5 +1,5 @@
 const react = require('../../src/rules/react')
 
-test('react.js', () => {
+test('react rules', () => {
   expect(react).toMatchSnapshot()
 })
