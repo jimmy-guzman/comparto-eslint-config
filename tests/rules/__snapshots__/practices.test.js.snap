@@ -20,7 +20,9 @@ Object {
     "curly": "error",
     "default-case": "error",
     "default-case-last": "error",
-    "default-param-last": "error",
+    "default-param-last": Array [
+      "error",
+    ],
     "dot-notation": "error",
     "eqeqeq": "error",
     "grouped-accessor-pairs": Array [
