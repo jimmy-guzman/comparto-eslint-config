@@ -1,3 +1,11 @@
+# [5.1.0](https://github.com/comparto/eslint-config/compare/v5.0.2...v5.1.0) (2020-12-06)
+
+
+### Features
+
+* **jest:** 🎸 new `@testing-library/jest-dom` rules ([9af79af](https://github.com/comparto/eslint-config/commit/9af79af626001a2e6635e0d7cfdb388f724b00e4)), closes [#61](https://github.com/comparto/eslint-config/issues/61)
+* **jest:** 🎸 new `@testing-library/react` rules ([9c75f24](https://github.com/comparto/eslint-config/commit/9c75f243d56a54bc082fb4afd2a91b78cc114fed)), closes [#61](https://github.com/comparto/eslint-config/issues/61)
+
 ## [5.0.2](https://github.com/comparto/eslint-config/compare/v5.0.1...v5.0.2) (2020-11-23)
 
 
