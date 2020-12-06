@@ -1,4 +1,5 @@
 const testingLibrary = require('../../src/rules/jest/testing-library')
+const jestDom = require('../../src/rules/jest/jest-dom')
 
 describe('jest', () => {
   beforeEach(() => {
@@ -10,15 +11,20 @@ describe('jest', () => {
     expect(jestRules).toMatchSnapshot()
   })
 
-  it('should also include testing-library rules', () => {
+  it('should also include testing-library & jest-dom rules', () => {
     jest.doMock('../../src/utils', () => ({
       doesDependencyExist: () => true
     }))
     const jestRules = require('../../src/rules/jest')
 
-    expect(jestRules.plugins).toStrictEqual(['jest', 'testing-library'])
+    expect(jestRules.plugins).toStrictEqual([
+      'jest',
+      'testing-library',
+      'jest-dom'
+    ])
     expect(jestRules.rules).toEqual(
-      expect.objectContaining(testingLibrary.rules)
+      expect.objectContaining(testingLibrary.rules),
+      expect.objectContaining(jestDom.rules)
     )
   })
 })
