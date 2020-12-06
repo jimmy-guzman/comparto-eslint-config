@@ -1,13 +1,20 @@
 const { doesDependencyExist } = require('../../utils')
 const testingLibrary = require('./testing-library')
+const jestDom = require('./jest-dom')
 
 const hasTestingLibrary = doesDependencyExist('@testing-library/react')
+const hasJestDom = doesDependencyExist('@testing-library/jest-dom')
 
 module.exports = {
-  plugins: ['jest', ...(hasTestingLibrary ? testingLibrary.plugins : [])],
+  plugins: [
+    'jest',
+    ...(hasTestingLibrary ? testingLibrary.plugins : []),
+    ...(hasJestDom ? jestDom.plugins : [])
+  ],
   env: { 'jest/globals': true },
   rules: {
     ...(hasTestingLibrary ? testingLibrary.rules : {}),
+    ...(hasJestDom ? jestDom.rules : {}),
     'jest/consistent-test-it': ['error', { fn: 'test', withinDescribe: 'it' }],
     'jest/expect-expect': 'warn',
     'jest/lowercase-name': 'error',
