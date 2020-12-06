@@ -2,7 +2,7 @@ module.exports = {
   rules: {
     'no-await-in-loop': 'error',
     'no-console': 'warn',
-    'no-loss-of-precision': 'off',
+    'no-loss-of-precision': 'error',
     'no-promise-executor-return': 'off',
     'no-template-curly-in-string': 'error',
     'no-unreachable-loop': 'error',
