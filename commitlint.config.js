@@ -13,7 +13,7 @@ module.exports = {
     'scope-enum': [
       2,
       'always',
-      ['workspace', 'deps', 'deps-dev', 'release', 'all', ...rules]
+      ['workspace', 'deps', 'deps-dev', 'release', 'all', 'readme', ...rules]
     ],
     'subject-case': [
       2,
