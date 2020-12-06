@@ -6,7 +6,7 @@
 
 # @comparto/eslint-config
 
-This package provides a shareable ESLint configuration with reasonable rules for react, typescript and javascript.
+This package provides a shareable ESLint configuration with reasonable rules for react, typescript, javascript, jest and @testing-library.
 
 ## Usage:
 
