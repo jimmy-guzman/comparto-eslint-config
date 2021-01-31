@@ -7,7 +7,7 @@ const setupDoesFileExist = value => {
   return doesFileExist('./some-file')
 }
 
-const setupDoesDependencyExist = value => {
+const setupDoesDepExist = value => {
   jest.doMock('read-pkg-up', () => ({
     sync: () => ({
       packageJson: {
@@ -18,9 +18,9 @@ const setupDoesDependencyExist = value => {
     })
   }))
 
-  const { doesDependencyExist } = require('../src/utils')
+  const { doesDepExist } = require('../src/utils')
 
-  return doesDependencyExist(value)
+  return doesDepExist(value)
 }
 
 describe('utils', () => {
@@ -35,12 +35,12 @@ describe('utils', () => {
       expect(setupDoesFileExist(false)).toBeFalsy()
     })
   })
-  describe('doesDependencyExist()', () => {
+  describe('doesDepExist()', () => {
     it('should return true if dependency exists', () => {
-      expect(setupDoesDependencyExist('awesomeDep')).toBeTruthy()
+      expect(setupDoesDepExist('awesomeDep')).toBeTruthy()
     })
     it('should return true if dependency does not exist', () => {
-      expect(setupDoesDependencyExist('badDep')).toBeFalsy()
+      expect(setupDoesDepExist('badDep')).toBeFalsy()
     })
   })
 })
