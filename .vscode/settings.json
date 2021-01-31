@@ -1,3 +1,9 @@
 {
-  "cSpell.words": ["commitlint", "comparto", "eslintconfig", "gitzy"]
+  "cSpell.words": [
+    "commitlint",
+    "comparto",
+    "eslintconfig",
+    "gitzy",
+    "peerdeps"
+  ]
 }

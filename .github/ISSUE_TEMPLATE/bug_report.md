@@ -4,15 +4,16 @@ about: Create a report to help us improve
 title: ''
 labels: bug
 assignees: jimmy-guzman
-
 ---
 
 ---
+
 name: 🐛 Bug Report
 about: Bugs, missing documentation, or unexpected behavior 🤔.
+
 ---
 
-- `@comparte/eslint-config` version:
+- `@comparto/eslint-config` version:
 - `eslint` version:
 - `typescript` version:
 - `node` version:
