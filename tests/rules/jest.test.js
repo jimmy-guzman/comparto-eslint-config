@@ -13,7 +13,7 @@ describe('jest', () => {
 
   it('should also include testing-library & jest-dom rules', () => {
     jest.doMock('../../src/utils', () => ({
-      doesDependencyExist: () => true
+      doesDepExist: () => true
     }))
     const jestRules = require('../../src/rules/jest')
 

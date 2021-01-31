@@ -1,3 +1,5 @@
+const { hasJest, hasReact, hasTypescript } = require('./config')
+
 const rulesDirectory = './rules'
 const rulesSets = [
   'base',
@@ -6,10 +8,10 @@ const rulesSets = [
   'es6',
   'errors',
   'style',
-  'react',
-  'typescript',
-  'jest'
-]
+  hasReact && 'react',
+  hasTypescript && 'typescript',
+  hasJest && 'jest'
+].filter(Boolean)
 
 module.exports = {
   extends: rulesSets.map(rulesSet =>

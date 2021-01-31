@@ -6,7 +6,7 @@ function doesFileExist(file) {
   return fs.existsSync(path.join(process.cwd(), file))
 }
 
-function doesDependencyExist(dep) {
+function doesDepExist(dep) {
   const { packageJson } = readPkgUp.sync({ normalize: true })
   const allDeps = Object.keys({
     ...packageJson.peerDependencies,
@@ -17,4 +17,4 @@ function doesDependencyExist(dep) {
   return allDeps.includes(dep)
 }
 
-module.exports = { doesFileExist, doesDependencyExist }
+module.exports = { doesFileExist, doesDepExist }

@@ -1,15 +1,22 @@
 {
   "cSpell.words": [
     "NVMRC",
+    "backreference",
+    "camelcase",
+    "chunkname",
     "cicd",
     "codecov",
     "commitlint",
     "commitlintrc",
     "comparto",
+    "denylist",
     "eslintconfig",
+    "esmodule",
     "gitzy",
     "lcov",
+    "nofunc",
     "peerdeps",
+    "plusplus",
     "wagoid"
   ]
 }

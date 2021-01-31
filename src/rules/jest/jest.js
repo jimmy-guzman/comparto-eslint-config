@@ -1,9 +1,6 @@
-const { doesDependencyExist } = require('../../utils')
+const { hasTestingLibrary, hasJestDom } = require('../../config')
 const testingLibrary = require('./testing-library')
 const jestDom = require('./jest-dom')
-
-const hasTestingLibrary = doesDependencyExist('@testing-library/react')
-const hasJestDom = doesDependencyExist('@testing-library/jest-dom')
 
 module.exports = {
   plugins: [
