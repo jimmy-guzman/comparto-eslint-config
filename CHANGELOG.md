@@ -1,3 +1,17 @@
+# [6.0.0](https://github.com/comparto/eslint-config/compare/v5.1.0...v6.0.0) (2021-01-31)
+
+
+### Features
+
+* **errors:** 🎸 enable `no-loss-of-precision` ([b21b6bb](https://github.com/comparto/eslint-config/commit/b21b6bb794e989fe3507d05d18648a64c7dfc5aa))
+* **typescript:** 🎸 new `typescript` eslint rules ([6db9978](https://github.com/comparto/eslint-config/commit/6db99785033bbde51802b4eb29018e99b8a42317)), closes [#60](https://github.com/comparto/eslint-config/issues/60)
+
+
+### BREAKING CHANGES
+
+* **typescript:** 🧨 requires `typescript@^4.0.0` and introduces a lot of `typescript` eslint
+rules that are not fixable
+
 # [5.1.0](https://github.com/comparto/eslint-config/compare/v5.0.2...v5.1.0) (2020-12-06)
 
 
