@@ -1,9 +1,15 @@
 {
   "cSpell.words": [
+    "NVMRC",
+    "cicd",
+    "codecov",
     "commitlint",
+    "commitlintrc",
     "comparto",
     "eslintconfig",
     "gitzy",
-    "peerdeps"
+    "lcov",
+    "peerdeps",
+    "wagoid"
   ]
 }
