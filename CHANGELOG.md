@@ -1,3 +1,10 @@
+# [6.1.0](https://github.com/jimmy-guzman/comparto-eslint-config/compare/v6.0.0...v6.1.0) (2021-01-31)
+
+
+### Features
+
+* 🎸 include ts, jest & react rules if their respective dep exist ([5d7dbd3](https://github.com/jimmy-guzman/comparto-eslint-config/commit/5d7dbd35d8ab0b34a1fcf89b17d4e0eab69db18f))
+
 # [6.0.0](https://github.com/comparto/eslint-config/compare/v5.1.0...v6.0.0) (2021-01-31)
 
 
