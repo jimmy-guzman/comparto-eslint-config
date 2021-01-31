@@ -1,6 +1,6 @@
 {
-  "cSpell.words": [
-    "NVMRC",
+  "version": "0.1",
+  "words": [
     "backreference",
     "camelcase",
     "chunkname",
@@ -15,8 +15,10 @@
     "gitzy",
     "lcov",
     "nofunc",
+    "NVMRC",
     "peerdeps",
     "plusplus",
+    "streetsidesoftware",
     "wagoid"
   ]
 }
