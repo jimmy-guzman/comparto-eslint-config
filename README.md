@@ -50,14 +50,14 @@ This can be overridden exactly the same as the [`eslint-import-resolver-webpack`
 
 This config uses some rules that require type information like [naming-convention](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/naming-convention.md#selector-options), so `@typescript-eslint/parser`'s [`parserOptions.project`](https://eslint.org/docs/user-guide/configuring#specifying-parser-options) is set to `"./tsconfig.json"`. Override this value if your `tsconfig.json` is located somewhere else.
 
-[actions-badge]: https://img.shields.io/github/workflow/status/comparto/eslint-config/Release?label=actions&logo=github-actions&style=flat-square
+[actions-badge]: https://img.shields.io/github/workflow/status/jimmy-guzman/comparto-eslint-config/Release?label=actions&logo=github-actions&style=flat-square
 [version-badge]: https://img.shields.io/npm/v/@comparto/eslint-config.svg?logo=npm&style=flat-square
 [package]: https://www.npmjs.com/package/@comparto/eslint-config
 [downloads-badge]: https://img.shields.io/npm/dm/@comparto/eslint-config.svg?logo=npm&style=flat-square
 [npmtrends]: http://www.npmtrends.com/@comparto/eslint-config
 [semantic-release]: https://github.com/semantic-release/semantic-release
 [semantic-release-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square
-[coverage-badge]: https://img.shields.io/codecov/c/github/comparto/eslint-config.svg?style=flat-square
-[coverage]: https://codecov.io/github/comparto/eslint-config
+[coverage-badge]: https://img.shields.io/codecov/c/github/jimmy-guzman/comparto-eslint-config.svg?style=flat-square
+[coverage]: https://codecov.io/github/jimmy-guzman/comparto-eslint-config
 [prettier-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square
 [prettier]: https://github.com/prettier/prettier

@@ -10,11 +10,7 @@ module.exports = {
     'footer-max-line-length': [2, 'always', 100],
     'header-max-length': [2, 'always', 75],
     'scope-case': [2, 'always', 'lower-case'],
-    'scope-enum': [
-      2,
-      'always',
-      ['workspace', 'deps', 'deps-dev', 'release', 'all', 'readme', ...rules]
-    ],
+    'scope-enum': [2, 'always', ['*', 'deps', 'deps-dev', 'release', ...rules]],
     'subject-case': [
       2,
       'never',

@@ -4,9 +4,9 @@
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/comparto/eslint-config.git"
+    "url": "https://github.com/jimmy-guzman/comparto-eslint-config.git"
   },
-  "author": "@jimmy-guzman <jimmy.guzman@outlook.com>",
+  "author": "@jimmy-guzman <hi@jimmyguzman.com>",
   "license": "MIT",
   "keywords": [
     "eslint",
