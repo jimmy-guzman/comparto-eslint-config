@@ -1,11 +1,14 @@
-const rulesDirectory = './rules'
+const rulesDirectory = './src/rules'
 const rulesSets = [
   'base',
   'imports',
   'practices',
   'es6',
   'errors',
-  'style'
+  'style',
+  'react',
+  'typescript',
+  'jest'
 ].filter(Boolean)
 
 module.exports = {

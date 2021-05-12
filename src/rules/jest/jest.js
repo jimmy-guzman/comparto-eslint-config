@@ -1,17 +1,7 @@
-const { hasTestingLibrary, hasJestDom } = require('../../config')
-const testingLibrary = require('./testing-library')
-const jestDom = require('./jest-dom')
-
 module.exports = {
-  plugins: [
-    'jest',
-    ...(hasTestingLibrary ? testingLibrary.plugins : []),
-    ...(hasJestDom ? jestDom.plugins : [])
-  ],
+  plugins: ['jest'],
   env: { 'jest/globals': true },
   rules: {
-    ...(hasTestingLibrary ? testingLibrary.rules : {}),
-    ...(hasJestDom ? jestDom.rules : {}),
     'jest/consistent-test-it': ['error', { fn: 'test', withinDescribe: 'it' }],
     'jest/expect-expect': 'warn',
     'jest/lowercase-name': 'error',

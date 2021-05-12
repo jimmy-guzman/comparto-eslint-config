@@ -3966,10 +3966,10 @@ git-raw-commits@^2.0.0:
     split2 "^2.0.0"
     through2 "^3.0.0"
 
-gitzy@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/gitzy/-/gitzy-1.3.1.tgz#d428e8c9bccb66ae31123003376717674f32e622"
-  integrity sha512-/ir0BLpSFLWAiFTcOEftptArAImfXAyWU6hm82qLULoCBMFDTBpisU/7QHtll4TX3jfqyvSwfvFBrwoJUbwDug==
+gitzy@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/gitzy/-/gitzy-1.4.0.tgz#df4894ae3efb19f5c42a16b35ec458e66418b264"
+  integrity sha512-Z1VgJLLk1KUcxZJqMgjTYGCR6feFWKrv3NXuw2WRuCtlpeio1ZkG6if1fOqY3qrIS3ikNYCxKyhZ6qDNv8Kt9g==
   dependencies:
     ansi-colors "^4.1.1"
     commander "^7.0.0"

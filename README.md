@@ -26,8 +26,6 @@ This package provides a shareable ESLint configuration with rules for react, typ
 
 ## Usage:
 
-This will enable `jest`, `react`, `typescript` or `@testing-library` rules if their respective dependency exists.
-
 1. Install stuff:
 
    ```sh
@@ -42,6 +40,16 @@ This will enable `jest`, `react`, `typescript` or `@testing-library` rules if th
    ```
 
 1. Add `"extends": "@comparto/eslint-config"` to your `.eslintrc`
+
+### Additional Rules Configs
+
+The available rule configs are `typescript`, `react`, `jest`, `jest/testing-library`, `jest/jest-dom` or `all`. That can be used as:
+
+```yml
+extends:
+  - '@comparto/eslint-config'
+  - '@comparto/eslint-config/<config-name>'
+```
 
 ## Prettier:
 

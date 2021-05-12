@@ -1,6 +1,6 @@
 const jest = require('../src/rules/jest')
-const testingLibrary = require('../src/rules/jest/testing-library')
-const jestDom = require('../src/rules/jest/jest-dom')
+const testingLibrary = require('../src/rules/testing-library')
+const jestDom = require('../src/rules/jest-dom')
 const base = require('../src')
 
 module.exports = {

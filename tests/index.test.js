@@ -7,15 +7,6 @@ const defaultRuleSets = [
   'style'
 ]
 
-function shouldHaveRules(ruleSets) {
-  expect(require('../src/')).toEqual({
-    extends: ruleSets.map(
-      expectedRule => `${process.cwd()}/src/rules/${expectedRule}/index.js`
-    ),
-    rules: {}
-  })
-}
-
 function mockConfig(config = {}) {
   const _config = {
     hasJest: false,
@@ -32,15 +23,14 @@ describe('rule sets', () => {
     jest.resetModules()
   })
 
-  it('should have all the rules', () => {
-    mockConfig({ hasJest: true, hasReact: true, hasTypescript: true })
-
-    shouldHaveRules([...defaultRuleSets, 'react', 'typescript', 'jest'])
-  })
-
-  it('should only have default rules', () => {
+  it('should only have base rules', () => {
     mockConfig()
 
-    shouldHaveRules(defaultRuleSets)
+    expect(require('../src/')).toEqual({
+      extends: defaultRuleSets.map(
+        expectedRule => `${process.cwd()}/src/rules/${expectedRule}/index.js`
+      ),
+      rules: {}
+    })
   })
 })
